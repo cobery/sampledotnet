@@ -22,7 +22,7 @@
     <link href="./css/bootstrap-responsive.css" rel="stylesheet">
     <link href="./css/docs.css" rel="stylesheet">
     <link href="./js/google-code-prettify/prettify.css" rel="stylesheet">
-    <link href="./css/bootstrap-datetimepicker.css" rel="stylesheet">
+    <link href="http://www.malot.fr/bootstrap-datetimepicker/bootstrap-datetimepicker/css/bootstrap-datetimepicker.css" rel="stylesheet">
 
     <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
@@ -128,7 +128,7 @@
             <pre class="prettyprint linenums">&lt;input size=&quot;16&quot; type=&quot;text&quot; value=&quot;2012-06-15 14:45&quot; readonly class=&quot;form_datetime&quot;&gt;
 
 &lt;script type=&quot;text/javascript&quot;&gt;
-    $(&quot;.form_datetime&quot;).datetimepicker({format: 'yyyy-mm-dd hh:ii'});
+    $(&quot;.form_datetime&quot;).datetimepicker({format: '<%=System.Threading.Thread.CurrentThread.CurrentCulture.DateTimeFormat.ShortDatePattern%>'});
 &lt;/script&gt;            </pre>
           </div>
         </section>
@@ -362,7 +362,7 @@
         return false;  
     });
 
-    $("#dt1").datetimepicker({format: 'yyyy-mm-dd hh:ii', forceParse: true});
+    $("#dt1").datetimepicker({format: '<%=System.Threading.Thread.CurrentThread.CurrentCulture.DateTimeFormat.ShortDatePattern%>', forceParse: true});
     $(".form_datetime2").datetimepicker({
       format: "dd MM yyyy - hh:ii"
     });
