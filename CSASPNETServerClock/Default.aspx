@@ -354,6 +354,11 @@
   <!-- Analytics
   ================================================== -->
   <script type="text/javascript">
+    $( document ).ready(function() {
+        console.log( "document loaded" );
+   // });
+
+
     $('a[href^="#"]').click(function(){  
         var the_id = $(this).attr("href");  
         $('html, body').animate({  
@@ -388,6 +393,7 @@
       autoclose: true,
       todayBtn: true,
       showMeridian: true
+    });
     });
   </script>
 
