@@ -18,7 +18,7 @@ string shortUkDateFormatString = uk.DateTimeFormat.ShortDatePattern;
     <link href="./css/bootstrap-responsive.css" rel="stylesheet">
     <link href="./css/docs.css" rel="stylesheet">
     <link href="./js/google-code-prettify/prettify.css" rel="stylesheet">
-    <link href="http://www.malot.fr/bootstrap-datetimepicker/bootstrap-datetimepicker/css/bootstrap-datetimepicker.css" rel="stylesheet">
+    <link href="./css/bootstrap-datetimepicker.css" rel="stylesheet">
 
     <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
@@ -141,7 +141,7 @@ string shortUkDateFormatString = uk.DateTimeFormat.ShortDatePattern;
   <script src="./js/google-code-prettify/prettify.js"></script>
 
   <script src="./js/application.js"></script>
-  <script src="http://www.malot.fr/bootstrap-datetimepicker/bootstrap-datetimepicker/js/bootstrap-datetimepicker.min.js"></script>
+  <script src="./js/bootstrap-datetimepicker.min.js"></script>
 
 
   <!-- Datepicker code 
