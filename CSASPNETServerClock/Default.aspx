@@ -123,7 +123,7 @@
           <div>
             <div class="bs-docs-example">
               <p>One of the simpliest implementation is the component.</p>
-              <input size="16" type="text" value="2012-06-15 14:45" readonly class="form_datetime1">
+              <input id="dt1" size="16" type="text" value="2012-06-15 14:45" readonly class="form_datetime1">
             </div>
             <pre class="prettyprint linenums">&lt;input size=&quot;16&quot; type=&quot;text&quot; value=&quot;2012-06-15 14:45&quot; readonly class=&quot;form_datetime&quot;&gt;
 
@@ -362,7 +362,7 @@
         return false;  
     });
 
-    $(".form_datetime1").datetimepicker({format: 'yyyy-mm-dd hh:ii', forceParse: true});
+    $("#dt1").datetimepicker({format: 'yyyy-mm-dd hh:ii', forceParse: true});
     $(".form_datetime2").datetimepicker({
       format: "dd MM yyyy - hh:ii"
     });
