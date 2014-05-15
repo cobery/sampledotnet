@@ -1,6 +1,7 @@
 <%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="CSASPNETServerClock.Default" %>
+<%@ import Namespace="System.Globalization" %>
 <%
-CultureInfo uk = new CultureInfo("en-GB");
+System.Globalization.CultureInfo uk = new System.Globalization.CultureInfo("en-GB");
 string shortUkDateFormatString = uk.DateTimeFormat.ShortDatePattern;
 %>
 <!DOCTYPE html>
