@@ -66,12 +66,12 @@ string shortUkDateFormatString = uk.DateTimeFormat.ShortDatePattern;
         ================================================== -->
         <section id="demo_input">
           <div class="page-header">
-            <h2>Default input</h2>
+            <h2>Using Default Date formatting</h2>
           </div>
 
           <div>
             <div class="bs-docs-example">
-              <p>One of the simpliest implementation is the component.</p>
+              <p>One of the simpliest implementation is the component using the default Short Date formatting of the server.</p>
               <input id="dpLocal" size="16" type="text" value="May/5/2014" readonly class="form_datetime1">
             </div>
             <pre class="prettyprint linenums">&lt;input size=&quot;16&quot; type=&quot;text&quot; value=&quot;May/5/2014&quot; readonly class=&quot;form_datetime&quot;&gt;
@@ -86,12 +86,12 @@ string shortUkDateFormatString = uk.DateTimeFormat.ShortDatePattern;
         ================================================== -->
         <section id="demo_component">
           <div class="page-header">
-            <h2>Default component</h2>
+            <h2>Using UK Date formatting</h2>
           </div>
 
           <div>
             <div class="bs-docs-example">
-              <p>One of the simpliest implementation is the component.</p>
+              <p>One of the simpliest implementation is the component using the short date format for a UK locale.</p>
               <div class="input-append date form_datetime2">
                 <input id="dpI18n" size="16" type="text" value="" readonly>
                 <span class="add-on"><i class="icon-th"></i></span>
