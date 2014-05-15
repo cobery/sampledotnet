@@ -40,6 +40,7 @@
     </script>
 </head>
 <body onload="gettingTime();">
+    <p><%=System.Threading.Thread.CurrentThread.CurrentCulture.DateTimeFormat.ShortDatePattern%>
     <form id="form1" runat="server">
     <div>
         The server time is now：<span id="time" />
