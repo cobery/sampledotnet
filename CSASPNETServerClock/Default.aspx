@@ -1,7 +1,7 @@
 <%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="CSASPNETServerClock.Default" %>
 <%@ import Namespace="System.Globalization" %>
 <%
-System.Globalization.CultureInfo uk = new System.Globalization.CultureInfo("en-GB");
+CultureInfo uk = new CultureInfo("en-GB");
 string shortUkDateFormatString = uk.DateTimeFormat.ShortDatePattern;
 %>
 <!DOCTYPE html>
@@ -11,15 +11,7 @@ string shortUkDateFormatString = uk.DateTimeFormat.ShortDatePattern;
     <title>DateTime Picker Â· Bootstrap - Demo page</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Bootstrap DateTime Picker is a bootstrap twitter component. However it can be implemented on every html form to help datetime typing">
-    <meta name="author" content="Sebastien MALOT">
 
-    <!-- Open Graph -->
-    <meta property="og:title" content="DateTime Picker Â· Bootstrap Component - Demo page" />
-    <meta property="og:type" content="blog"/>
-    <meta property="og:site_name" content="DateTime Picker Â· Bootstrap" />
-    <meta property="og:url" content="http://www.malot.fr/bootstrap-datetimepicker/" />
-    <meta property="og:image" content="http://www.malot.fr/bootstrap-datetimepicker/bootstrap-datetimepicker/screenshot/standard_day.png" />
-    <meta property="og:description" content="Bootstrap DateTime Picker is a bootstrap twitter component. However it can be implemented on every html form to help datetime typing" />
 
     <!-- Le styles -->
     <link href="./css/bootstrap.css" rel="stylesheet">
@@ -36,16 +28,6 @@ string shortUkDateFormatString = uk.DateTimeFormat.ShortDatePattern;
     <!-- Le fav and touch icons -->
     <link rel="shortcut icon" href="./ico/favicon.png">
 
-    <script type="text/javascript">
-      var _gaq = _gaq || [];
-      _gaq.push(['_setAccount', 'UA-3147083-25']);
-      _gaq.push(['_trackPageview']);
-      (function() {
-        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-      })();
-    </script>
   </head>
 
   <body data-spy="scroll" data-target=".bs-docs-sidebar">
@@ -60,23 +42,6 @@ string shortUkDateFormatString = uk.DateTimeFormat.ShortDatePattern;
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="brand" href="./index.php">DateTime Picker</a>
-          <div class="nav-collapse collapse">
-            <ul class="nav">
-              <li class="">
-                <a href="./index.php">Home</a>
-              </li>
-              <li class="">
-                <a href="./demo.php">Demo</a>
-              </li>
-              <li class="">
-                <a href="https://github.com/smalot/bootstrap-datetimepicker/archive/master.zip">Download</a>
-              </li>
-              <li class="">
-                <a href="https://github.com/smalot/bootstrap-datetimepicker">GitHub</a>
-              </li>
-            </ul>
-          </div>
         </div>
       </div>
     </div>
@@ -89,8 +54,6 @@ string shortUkDateFormatString = uk.DateTimeFormat.ShortDatePattern;
     <p class="lead"><a href="http://www.malot.fr/bootstrap-datetimepicker/index.php">Bootstrap form component to handle date and time data.</a></p>
   </div>
 </header>
-
-  <a href="https://github.com/smalot/bootstrap-datetimepicker"><img style="position: absolute; top: 0; right: 0; border: 0; z-index: 2000" src="https://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png" alt="Fork me on GitHub"></a>
 
   <div class="container">
 
@@ -109,9 +72,9 @@ string shortUkDateFormatString = uk.DateTimeFormat.ShortDatePattern;
           <div>
             <div class="bs-docs-example">
               <p>One of the simpliest implementation is the component.</p>
-              <input id="dpLocal" size="16" type="text" value="2012-06-15 14:45" readonly class="form_datetime1">
+              <input id="dpLocal" size="16" type="text" value="May/5/2014" readonly class="form_datetime1">
             </div>
-            <pre class="prettyprint linenums">&lt;input size=&quot;16&quot; type=&quot;text&quot; value=&quot;2012-06-15 14:45&quot; readonly class=&quot;form_datetime&quot;&gt;
+            <pre class="prettyprint linenums">&lt;input size=&quot;16&quot; type=&quot;text&quot; value=&quot;May/5/2014&quot; readonly class=&quot;form_datetime&quot;&gt;
 
 &lt;script type=&quot;text/javascript&quot;&gt;
     $(&quot;.form_datetime&quot;).datetimepicker({format: '<%=System.Threading.Thread.CurrentThread.CurrentCulture.DateTimeFormat.ShortDatePattern%>'});
@@ -154,22 +117,6 @@ string shortUkDateFormatString = uk.DateTimeFormat.ShortDatePattern;
 
   <!-- Footer
   ================================================== -->
-  <footer class="footer">
-    <div class="container">
-      <p>You can contact and follow me on Twitter <a href="https://twitter.com/sebastienmalot" target="_blank">@sebastienmalot</a>.</p>
-      <ul class="footer-links">
-        <li><a href="http://www.malot.fr/bootstrap-datetimepicker/">Project</a></li>
-        <li class="muted">&middot;</li>
-        <li><a href="http://www.malot.fr/bootstrap-datetimepicker/demo.php">Demo</a></li>
-        <li class="muted">&middot;</li>
-        <li><a href="https://github.com/smalot/bootstrap-datetimepicker/archive/master.zip">Download</a></li>
-        <li class="muted">&middot;</li>
-        <li><a href="https://github.com/smalot/bootstrap-datetimepicker">GitHub</a></li>
-      </ul>
-    </div>
-  </footer>
-
-
 
   <!-- Le javascript
   ================================================== -->
