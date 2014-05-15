@@ -77,5 +77,31 @@
         The server time is now：<span id="time" />
     </div>
     </form>
+
+<!-- Le javascript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+  <script src="http://www.malot.fr/bootstrap-datetimepicker/js/jquery.js"></script>
+  <script src="http://www.malot.fr/bootstrap-datetimepicker/js/bootstrap-transition.js"></script>
+  <script src="http://www.malot.fr/bootstrap-datetimepicker/js/bootstrap-alert.js"></script>
+  <script src="http://www.malot.fr/bootstrap-datetimepicker/js/bootstrap-modal.js"></script>
+  <script src="http://www.malot.fr/bootstrap-datetimepicker/js/bootstrap-dropdown.js"></script>
+  <script src="http://www.malot.fr/bootstrap-datetimepicker/js/bootstrap-scrollspy.js"></script>
+  <script src="http://www.malot.fr/bootstrap-datetimepicker/js/bootstrap-tab.js"></script>
+  <script src="http://www.malot.fr/bootstrap-datetimepicker/js/bootstrap-tooltip.js"></script>
+  <script src="http://www.malot.fr/bootstrap-datetimepicker/js/bootstrap-popover.js"></script>
+  <script src="http://www.malot.fr/bootstrap-datetimepicker/js/bootstrap-button.js"></script>
+  <script src="http://www.malot.fr/bootstrap-datetimepicker/js/bootstrap-collapse.js"></script>
+  <script src="http://www.malot.fr/bootstrap-datetimepicker/js/bootstrap-carousel.js"></script>
+  <script src="http://www.malot.fr/bootstrap-datetimepicker/js/bootstrap-typeahead.js"></script>
+  <script src="http://www.malot.fr/bootstrap-datetimepicker/js/bootstrap-affix.js"></script>
+
+  <script src="http://www.malot.fr/bootstrap-datetimepicker/js/holder/holder.js"></script>
+  <script src="http://www.malot.fr/bootstrap-datetimepicker/js/google-code-prettify/prettify.js"></script>
+
+  <script src="http://www.malot.fr/bootstrap-datetimepicker/js/application.js"></script>
+  <script src="http://www.malot.fr/bootstrap-datetimepicker/bootstrap-datetimepicker/js/bootstrap-datetimepicker.min.js?t=20130302"></script>
+
 </body>
 </html>
