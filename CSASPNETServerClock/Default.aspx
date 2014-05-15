@@ -1,5 +1,8 @@
 <%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="CSASPNETServerClock.Default" %>
-
+<%
+CultureInfo uk = new CultureInfo("en-GB");
+string shortUkDateFormatString = uk.DateTimeFormat.ShortDatePattern;
+%>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -137,7 +140,7 @@
 
 &lt;script type=&quot;text/javascript&quot;&gt;
     $(&quot;.form_datetime&quot;).datetimepicker({
-        format: &quot;dd MM yyyy - hh:ii&quot;
+        format: &quot;<%=shortUkDateFormatString%>&quot;
     });
 &lt;/script&gt;            </pre>
           </div>
@@ -213,7 +216,7 @@
         //  format: "dd MM yyyy - hh:ii"
         //});
         $("#dpI18n").datetimepicker({
-          format: "dd MM yyyy - HH:ii P",
+          format: "<%=shortUkDateFormatString%>",
           autoclose: true,
           todayBtn: true,
           showMeridian: true
