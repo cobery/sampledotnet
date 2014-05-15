@@ -190,10 +190,10 @@
   <script src="./js/google-code-prettify/prettify.js"></script>
 
   <script src="./js/application.js"></script>
-  <script src="./js/bootstrap-datetimepicker.min.js"></script>
+  <script src="http://www.malot.fr/bootstrap-datetimepicker/bootstrap-datetimepicker/js/bootstrap-datetimepicker.min.js"></script>
 
 
-  <!-- Analytics
+  <!-- Datepicker code 
   ================================================== -->
   <script type="text/javascript">
     $( document ).ready(function() {
