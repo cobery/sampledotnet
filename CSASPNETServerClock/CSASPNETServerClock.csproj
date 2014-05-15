@@ -37,6 +37,9 @@
     <Reference Include="System.Web" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="**\*.aspx" />
+    <Content Include="**\*.js" />
+    <Content Include="**\*.css" />
     <Content Include="Clock.aspx" />
     <Content Include="Default.aspx" />
     <Content Include="ReadMe.txt" />
