@@ -22,7 +22,7 @@
     <link href="./css/bootstrap-responsive.css" rel="stylesheet">
     <link href="./css/docs.css" rel="stylesheet">
     <link href="./js/google-code-prettify/prettify.css" rel="stylesheet">
-    <link href="./bootstrap-datetimepicker/css/bootstrap-datetimepicker.css" rel="stylesheet">
+    <link href="./css/bootstrap-datetimepicker.css" rel="stylesheet">
 
     <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
@@ -344,11 +344,11 @@
   <script src="./js/bootstrap-typeahead.js"></script>
   <script src="./js/bootstrap-affix.js"></script>
 
-  <script src="./js/holder/holder.js"></script>
+  <script src="./js/holder.js"></script>
   <script src="./js/google-code-prettify/prettify.js"></script>
 
   <script src="./js/application.js"></script>
-  <script src="./bootstrap-datetimepicker/js/bootstrap-datetimepicker.min.js?t=20130302"></script>
+  <script src="./js/bootstrap-datetimepicker.min.js"></script>
 
 
   <!-- Analytics

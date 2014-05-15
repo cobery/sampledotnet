@@ -39,6 +39,7 @@
   <ItemGroup>
     <Content Include="bootstrap-datetimepicker\**\*.*" />
     <Content Include="**\*.aspx" />
+    <Content Include="**\*.png" />
     <Content Include="**\*.js" />
     <Content Include="**\*.css" />
     <Content Include="Clock.aspx" />
