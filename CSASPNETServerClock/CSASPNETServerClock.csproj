@@ -37,6 +37,7 @@
     <Reference Include="System.Web" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="bootstrap-datetimepicker\**\*.*" />
     <Content Include="**\*.aspx" />
     <Content Include="**\*.js" />
     <Content Include="**\*.css" />
