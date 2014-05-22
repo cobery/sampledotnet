@@ -2,7 +2,8 @@
 <%@ import Namespace="System.Globalization" %>
 <%
 CultureInfo uk = new CultureInfo("en-GB");
-string shortUkDateFormatString = uk.DateTimeFormat.ShortDatePattern;
+string datePattern = uk.DateTimeFormat.ShortDatePattern;
+string shortUkDateFormatString = Regex.Replace(datePattern, "(?i)[M]+", "mm"); // replace Month notation with mm to get number.
 %>
 <!DOCTYPE html>
 <html lang="en">
