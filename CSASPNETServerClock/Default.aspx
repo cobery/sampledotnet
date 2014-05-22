@@ -1,7 +1,7 @@
 <%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="CSASPNETServerClock.Default" %>
 <%@ import Namespace="System.Globalization" %>
 <script runat=server>
-protected string convertFormat(f)
+protected String convertFormat(f)
 {
     return Regex.Replace(f, "(?i)[M]+", "mm");
 }
