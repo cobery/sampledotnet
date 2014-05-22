@@ -1,9 +1,13 @@
 <%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="CSASPNETServerClock.Default" %>
 <%@ import Namespace="System.Globalization" %>
 <%
+protected string convertFormat(f)
+{
+    return Regex.Replace(f, "(?i)[M]+", "mm");
+}
 CultureInfo uk = new CultureInfo("en-GB");
-string datePattern = uk.DateTimeFormat.ShortDatePattern;
-string shortUkDateFormatString = Regex.Replace(datePattern, "(?i)[M]+", "mm"); // replace Month notation with mm to get number.
+string shortUkDateFormatString = convertFormat(uk.DateTimeFormat.ShortDatePattern);
+//string shortUkDateFormatString = Regex.Replace(datePattern, "(?i)[M]+", "mm"); // replace Month notation with mm to get number.
 %>
 <!DOCTYPE html>
 <html lang="en">
