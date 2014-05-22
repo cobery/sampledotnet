@@ -81,10 +81,10 @@ string shortUkDateFormatString = convertFormat(uk.DateTimeFormat.ShortDatePatter
               <p>One of the simpliest implementation is the component using the default Short Date formatting of the server.</p>
               <input id="dpLocal" size="16" type="text" value="May/5/2014" readonly class="form_datetime1">
             </div>
-            <pre class="prettyprint linenums">&lt;input size=&quot;16&quot; type=&quot;text&quot; value=&quot;May/5/2014&quot; readonly class=&quot;form_datetime&quot;&gt;
+            <pre class="prettyprint linenums">&lt;input size=&quot;16&quot; type=&quot;text&quot; value=&quot;May/22/2014&quot; readonly class=&quot;form_datetime&quot;&gt;
 
 &lt;script type=&quot;text/javascript&quot;&gt;
-    $(&quot;.form_datetime&quot;).datetimepicker({format: '<%=System.Threading.Thread.CurrentThread.CurrentCulture.DateTimeFormat.ShortDatePattern%>'});
+    $(&quot;.form_datetime&quot;).datetimepicker({format: '<%=convertFormat(System.Threading.Thread.CurrentThread.CurrentCulture.DateTimeFormat.ShortDatePattern)%>'});
 &lt;/script&gt;            </pre>
           </div>
         </section>
@@ -166,7 +166,7 @@ string shortUkDateFormatString = convertFormat(uk.DateTimeFormat.ShortDatePatter
           return false;  
         });
 
-        $("#dpLocal").datetimepicker({format: '<%=System.Threading.Thread.CurrentThread.CurrentCulture.DateTimeFormat.ShortDatePattern%>', forceParse: true});
+        $("#dpLocal").datetimepicker({format: '<%=convertFormat(System.Threading.Thread.CurrentThread.CurrentCulture.DateTimeFormat.ShortDatePattern)%>', forceParse: true});
         //$(".form_datetime2").datetimepicker({
         //  format: "dd MM yyyy - hh:ii"
         //});
